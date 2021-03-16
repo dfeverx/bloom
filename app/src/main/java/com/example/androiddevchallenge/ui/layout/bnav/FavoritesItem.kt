@@ -30,5 +30,4 @@ fun FavoritesItem() {
             .fillMaxSize()
             .background(Color.Yellow)
     )
-
 }

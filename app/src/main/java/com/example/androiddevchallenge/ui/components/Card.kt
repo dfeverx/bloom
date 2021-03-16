@@ -71,8 +71,6 @@ fun MyCard() {
                 .background(color = Color.LightGray)
         )
     }
-
-
 }
 
 @Preview
@@ -80,5 +78,3 @@ fun MyCard() {
 fun CardPreview() {
     MyCard()
 }
-
-

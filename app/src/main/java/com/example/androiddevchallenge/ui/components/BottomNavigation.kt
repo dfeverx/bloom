@@ -34,7 +34,6 @@ fun MyBottomNavigation(
     currentRoute: String?
 ) {
 
-
     BottomNavigation(elevation = 16.dp, backgroundColor = MaterialTheme.colors.primary) {
         items.forEach { screen ->
             BottomNavigationItem(
@@ -55,7 +54,5 @@ fun MyBottomNavigation(
                 }
             )
         }
-
     }
-
 }

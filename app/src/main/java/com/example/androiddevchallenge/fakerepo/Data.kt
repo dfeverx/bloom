@@ -27,7 +27,7 @@ val themes = listOf(
     Theme("Easy care", R.drawable.easy),
     Theme("Statements", R.drawable.statement),
 
-    )
+)
 val plants = listOf(
     Plant("Monstera", "This is a description", R.drawable.monstera, true),
     Plant("Aglaonema", "This is a description", R.drawable.aglaonema),

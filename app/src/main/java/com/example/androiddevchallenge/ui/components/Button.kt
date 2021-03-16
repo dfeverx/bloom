@@ -45,13 +45,12 @@ fun SecondaryButton(buttonText: String, onClick: () -> Unit, modifier: Modifier 
     Button(
         border = null, elevation = null,
         modifier = modifier,
-        onClick = { onClick() }, colors = ButtonDefaults.buttonColors(
+        onClick = { onClick() },
+        colors = ButtonDefaults.buttonColors(
             backgroundColor = Color.Transparent,
             contentColor = MaterialTheme.colors.primaryVariant
         )
     ) {
         Text(text = buttonText)
     }
-
 }
-

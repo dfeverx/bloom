@@ -30,5 +30,4 @@ fun ProfileItem() {
             .fillMaxSize()
             .background(Color.Black)
     )
-
 }

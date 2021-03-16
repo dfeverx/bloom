@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
 @Composable
 fun BloomNavigation() {
     val navController = rememberNavController()
@@ -56,9 +55,7 @@ fun BloomNavigation() {
             HomeContainer()
         }
     }
-
 }
-
 
 /*
 @Preview("Light Theme", widthDp = 360, heightDp = 640)

@@ -15,7 +15,6 @@
  */
 package com.example.androiddevchallenge.ui.theme
 
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -86,5 +85,3 @@ val typography = Typography(
     )
 
 )
-
-

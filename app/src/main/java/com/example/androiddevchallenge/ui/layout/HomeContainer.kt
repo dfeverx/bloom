@@ -45,7 +45,6 @@ fun HomeContainer() {
     Surface(color = MaterialTheme.colors.background) {
         BottomNavContent()
     }
-
 }
 
 @Composable
@@ -60,12 +59,11 @@ fun BottomNavContent() {
         Screen.Cart
     )
     Scaffold(
-        bottomBar = { MyBottomNavigation(items, navController,  currentRoute) },
+        bottomBar = { MyBottomNavigation(items, navController, currentRoute) },
         content = {
             MainContent(navController)
         }
     )
-
 }
 
 @Composable
@@ -86,11 +84,8 @@ fun MainContent(navController: NavHostController) {
         composable("favorites_item") {
             FavoritesItem()
         }
-
     }
-
 }
-
 
 sealed class Screen(val route: String, @StringRes val label: Int, val icon: ImageVector) {
     object Home : Screen("home_item", R.string.home, Icons.Filled.Home)

@@ -78,6 +78,4 @@ fun LogIn(navController: NavController) {
             )
         }
     }
-
-
 }

@@ -49,7 +49,6 @@ fun H2(text: String, modifier: Modifier = Modifier) {
     )
 }
 
-
 @Composable
 fun Subtitle1(text: String, modifier: Modifier = Modifier) {
     Text(
@@ -59,7 +58,6 @@ fun Subtitle1(text: String, modifier: Modifier = Modifier) {
         color = MaterialTheme.colors.onSurface
     )
 }
-
 
 @Composable
 fun Body1(text: String, modifier: Modifier = Modifier) {
@@ -82,7 +80,6 @@ fun Body2(text: AnnotatedString, modifier: Modifier = Modifier) {
     )
 }
 
-
 @Composable
 fun OutlinedTextInput(
     value: String,
@@ -100,7 +97,7 @@ fun OutlinedTextInput(
             .fillMaxWidth(),
         textStyle = MaterialTheme.typography.body1,
 
-        )
+    )
 }
 
 @Composable
@@ -126,6 +123,3 @@ fun TextSearch(
         },
     )
 }
-
-
-

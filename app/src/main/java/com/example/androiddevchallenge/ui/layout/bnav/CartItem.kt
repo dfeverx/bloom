@@ -30,5 +30,4 @@ fun CartItem() {
             .fillMaxSize()
             .background(Color.Red)
     )
-
 }

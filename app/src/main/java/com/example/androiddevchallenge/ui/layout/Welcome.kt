@@ -40,7 +40,6 @@ import com.example.androiddevchallenge.ui.components.PrimaryButton
 import com.example.androiddevchallenge.ui.components.SecondaryButton
 import com.example.androiddevchallenge.ui.components.Subtitle1
 
-
 @Composable
 fun Welcome(navController: NavController) {
     Surface(color = MaterialTheme.colors.primary) {
@@ -57,10 +56,8 @@ fun Welcome(navController: NavController) {
             )
 //        Content
             Content(navController)
-
         }
     }
-
 }
 
 @Composable
@@ -71,7 +68,7 @@ fun Content(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
 
-        ) {
+    ) {
 //        Illos
         Image(
             painter = painterResource(id = R.drawable.welcome_illos),
@@ -84,9 +81,10 @@ fun Content(navController: NavController) {
             painter = painterResource(id = R.drawable.logo),
             contentDescription = null
         )
-//Slogan
+// Slogan
         Subtitle1(
-            text = stringResource(R.string.slogan), modifier = Modifier
+            text = stringResource(R.string.slogan),
+            modifier = Modifier
                 .paddingFromBaseline(top = 32.dp, bottom = 40.dp)
         )
 
@@ -143,7 +141,5 @@ fun Content(navController: NavController) {
             onClick = { navController.navigate("log_in") },
             modifier = Modifier.padding(top = 24.dp)
         )
-
     }
 }
-

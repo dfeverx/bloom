@@ -65,7 +65,8 @@ fun HomeContent() {
     Surface(color = MaterialTheme.colors.background) {
         LazyColumn(
             modifier = Modifier
-                .fillMaxSize(), contentPadding = PaddingValues(bottom = 56.dp)
+                .fillMaxSize(),
+            contentPadding = PaddingValues(bottom = 56.dp)
         ) {
             item {
                 HomeHeader()
@@ -83,7 +84,6 @@ fun HomeContent() {
         }
     }
 }
-
 
 @Composable
 fun FullWidthItem(plant: Plant) {
@@ -129,7 +129,6 @@ fun FullWidthItem(plant: Plant) {
                             .paddingFromBaseline(bottom = 24.dp)
                             .padding(start = 16.dp)
                     )
-
                 }
 //                Spacer(modifier = Modifier.weight(1f))
                 Checkbox(
@@ -140,14 +139,11 @@ fun FullWidthItem(plant: Plant) {
                         .padding(top = 16.dp)
                         .size(24.dp)
                 )
-
             }
             Divider(modifier = Modifier.padding(start = 8.dp), thickness = 1.dp)
         }
     }
-
 }
-
 
 @Composable
 fun DesignUrGardenHeader() {
@@ -175,7 +171,6 @@ fun DesignUrGardenHeader() {
     }
 }
 
-
 @Composable
 fun BrowseThemes() {
     H1(
@@ -186,7 +181,6 @@ fun BrowseThemes() {
     )
     Spacer(modifier = Modifier.height(8.dp))
     BrowseThemesItems(themes = themes)
-
 }
 
 @Composable
@@ -229,8 +223,7 @@ fun ThemesItem(theme: Theme) {
             .size(136.dp)
             .clickable { },
         shape = MaterialTheme.shapes.small,
-    )
-    {
+    ) {
         Column {
             Image(
                 modifier = Modifier
@@ -255,7 +248,5 @@ fun ThemesItem(theme: Theme) {
                 )
             }
         }
-
-
     }
 }
