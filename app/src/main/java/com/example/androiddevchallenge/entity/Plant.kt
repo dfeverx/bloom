@@ -19,5 +19,5 @@ class Plant(
     val title: String,
     val description: String,
     val img: Int,
-    var isSelected: Boolean = false
+    val isSelected: Boolean = false
 )
